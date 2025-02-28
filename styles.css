@@ -1,48 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Like Status App</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <h1>Like Status App</h1>
-        <p class="summary">
-            This app allows you to track who likes your post. Add names to see the like status update dynamically!
-        </p>
-    </header>
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
 
-    <!-- Main Container -->
-    <div class="container">
-        <div class="input-section">
-            <div class="input-group">
-                <input type="text" id="nameInput" placeholder="Enter a name">
-                <button id="addNameBtn" class="icon-button">
-                    <i class="fas fa-plus"></i> Add
-                </button>
-            </div>
-            <button id="resetBtn" class="icon-button reset">
-                <i class="fas fa-redo"></i> Reset
-            </button>
-        </div>
-        <div class="output-section">
-            <p id="likeStatus"><i class="fas fa-heart"></i> no one likes this</p>
-        </div>
-    </div>
+/* Header */
+header {
+    text-align: center;
+    margin: 20px 0;
+}
 
-    <!-- Footer -->
-    <footer>
-        <h2>Check out my GitHub</h2>
-        <h2>👇🏿👇</h2>
-        <p>&copy; Ub-Victor - All Rights Reserved. Visit my <a href="https://github.com/ub-victor" target="_blank">GitHub</a>.</p>
-        <p>2024</p>
-    </footer>
+header h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+header .summary {
+    font-size: 16px;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* Main Container */
+.container {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: calc(100% - 100px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+}
+
+.icon-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icon-button:hover {
+    background-color: #0056b3;
+}
+
+.icon-button.reset {
+    background-color: #dc3545;
+}
+
+.icon-button.reset:hover {
+    background-color: #c82333;
+}
+
+.output-section {
+    margin-top: 20px;
+}
+
+#likeStatus {
+    font-size: 18px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+}
+
+footer h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
