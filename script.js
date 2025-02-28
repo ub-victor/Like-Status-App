@@ -26,13 +26,36 @@ document.addEventListener("DOMContentLoaded", () => {
         const name = nameInput.value.trim();
         if (name) {
             names.push(name);
-            likeStatus.textContent = likes(names);
+            updateLikeStatus();
             nameInput.value = "";
         }
     });
 
     resetBtn.addEventListener("click", () => {
         names = [];
-        likeStatus.textContent = likes(names);
+        updateLikeStatus();
     });
+
+    function updateLikeStatus() {
+        // Update the like status text
+        likeStatus.innerHTML = `<i class="fas fa-heart"></i> ${likes(names)}`;
+
+        // Re-select the heart icon after updating the inner HTML
+        const heartIcon = likeStatus.querySelector(".fa-heart");
+
+        // Update heart icon color based on the number of likes
+        if (names.length === 0) {
+            heartIcon.classList.remove("heart-one", "heart-two", "heart-many");
+            heartIcon.classList.add("heart-default");
+        } else if (names.length === 1) {
+            heartIcon.classList.remove("heart-default", "heart-two", "heart-many");
+            heartIcon.classList.add("heart-one");
+        } else if (names.length === 2) {
+            heartIcon.classList.remove("heart-default", "heart-one", "heart-many");
+            heartIcon.classList.add("heart-two");
+        } else {
+            heartIcon.classList.remove("heart-default", "heart-one", "heart-two");
+            heartIcon.classList.add("heart-many");
+        }
+    }
 });
