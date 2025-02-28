@@ -1,73 +1,48 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like Status App</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Like Status App</h1>
+        <p class="summary">
+            This app allows you to track who likes your post. Add names to see the like status update dynamically!
+        </p>
+    </header>
 
-.container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-}
+    <!-- Main Container -->
+    <div class="container">
+        <div class="input-section">
+            <div class="input-group">
+                <input type="text" id="nameInput" placeholder="Enter a name">
+                <button id="addNameBtn" class="icon-button">
+                    <i class="fas fa-plus"></i> Add
+                </button>
+            </div>
+            <button id="resetBtn" class="icon-button reset">
+                <i class="fas fa-redo"></i> Reset
+            </button>
+        </div>
+        <div class="output-section">
+            <p id="likeStatus"><i class="fas fa-heart"></i> no one likes this</p>
+        </div>
+    </div>
 
-h1 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
-}
+    <!-- Footer -->
+    <footer>
+        <h2>Check out my GitHub</h2>
+        <h2>👇🏿👇</h2>
+        <p>&copy; Ub-Victor - All Rights Reserved. Visit my <a href="https://github.com/ub-victor" target="_blank">GitHub</a>.</p>
+        <p>2024</p>
+    </footer>
 
-.input-section {
-    margin-bottom: 20px;
-    
-}
-
-input[type="text"] {
-    width: calc(100% - 90px);
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    margin-bottom: 10px;
-    box-shadow: 0 0 15px rgba(56, 145, 197, 0.712);
-}
-
-button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    background-color: #007bff;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    margin-left: 10px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-#resetBtn {
-    background-color: #dc3545;
-}
-
-#resetBtn:hover {
-    background-color: #c82333;
-}
-
-.output-section {
-    margin-top: 20px;
-}
-
-#likeStatus {
-    font-size: 18px;
-    color: #555;
-}
+    <script src="script.js"></script>
+</body>
+</html>
