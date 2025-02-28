@@ -27,6 +27,7 @@ h1 {
 
 .input-section {
     margin-bottom: 20px;
+    box-shadow: #007bff;
 }
 
 input[type="text"] {
