@@ -30,75 +30,7 @@ header .summary {
     line-height: 1.5;
 }
 
-/* Main Container */
-.container {
-    background-color: #fff;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 450px;
-    text-align: center;
-    margin: 20px 0;
-}
 
-.input-section {
-    margin-bottom: 20px;
-}
-
-.input-group {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-}
-
-input[type="text"] {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-    outline: none;
-}
-
-.icon-button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 6px;
-    background-color: #007bff;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.icon-button:hover {
-    background-color: #0056b3;
-}
-
-.icon-button.reset {
-    background-color: #dc3545;
-}
-
-.icon-button.reset:hover {
-    background-color: #c82333;
-}
-
-.output-section {
-    margin-top: 20px;
-}
-
-#likeStatus {
-    font-size: 18px;
-    color: #555;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-}
 
 /* Footer */
 footer {
