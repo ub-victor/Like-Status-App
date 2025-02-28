@@ -37,7 +37,7 @@ input[type="text"] {
     border-radius: 4px;
     font-size: 16px;
     margin-bottom: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(56, 145, 197, 0.712);
 }
 
 button {
