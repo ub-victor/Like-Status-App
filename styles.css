@@ -48,14 +48,13 @@ header .summary {
 
 .input-group {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 10px;
-    margin-bottom: 10px;
 }
 
 input[type="text"] {
-    width: 60%;
+    flex: 1;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 6px;
