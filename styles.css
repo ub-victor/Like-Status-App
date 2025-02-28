@@ -101,7 +101,27 @@ input[type="text"] {
     gap: 8px;
 }
 
+/* Heart Icon Styles */
+#likeStatus .fa-heart {
+    transition: color 0.5s ease; /* Smooth color transition */
+}
 
+/* Color Classes for Heart Icon */
+.heart-default {
+    color: #555; /* Default color */
+}
+
+.heart-one {
+    color: #ff6b6b; /* Color for 1 like */
+}
+
+.heart-two {
+    color: #ff4757; /* Color for 2 likes */
+}
+
+.heart-many {
+    color: #ff1a1a; /* Color for 3+ likes */
+}
 
 /* Footer */
 footer {
