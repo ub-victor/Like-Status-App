@@ -47,7 +47,7 @@ header .summary {
 }
 
 input[type="text"] {
-    width: 100%;
+    width: calc(100% - 90px);
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 6px;
