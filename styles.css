@@ -33,7 +33,6 @@ header .summary {
 
 /* Main Container */
 .container {
-    display: flex;
     background-color: #fff;
     padding: 25px;
     border-radius: 12px;
@@ -41,7 +40,7 @@ header .summary {
     width: 100%;
     max-width: 450px;
     text-align: center;
-    margin: 20px 0;
+    margin: 20px auto;
 }
 
 .input-section {
