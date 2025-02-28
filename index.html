@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like Status App</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Like Status App</h1>
+        <p class="summary">
+            This app allows you to track who likes your post. Add names to see the like status update dynamically!
+        </p>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <div class="input-section">
+            <div class="input-group">
+                <input type="text" id="nameInput" placeholder="Enter a name">
+                <button id="addNameBtn" class="icon-button">
+                    <i class="fas fa-plus"></i> Add
+                </button>
+            </div>
+            <button id="resetBtn" class="icon-button reset">
+                <i class="fas fa-redo"></i> Reset
+            </button>
+        </div>
+        <div class="output-section">
+            <p id="likeStatus"><i class="fas fa-heart"></i> no one likes this</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <h2>Check out my GitHub</h2>
+        <h2>👇🏿👇</h2>
+        <p>&copy; Ub-Victor - All Rights Reserved. Visit my <a href="https://github.com/ub-victor" target="_blank">GitHub</a>.</p>
+        <p>2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
