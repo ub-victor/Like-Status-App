@@ -112,15 +112,15 @@ input[type="text"] {
 }
 
 .heart-one {
-    color: #582626; /* Color for 1 like */
+    color: #110707; /* Color for 1 like */
 }
 
 .heart-two {
-    color: #b81111; /* Color for 2 likes */
+    color: #ffef08; /* Color for 2 likes */
 }
 
 .heart-many {
-    color: #f50404f6; /* Color for 3+ likes */
+    color: #fd0808f6; /* Color for 3+ likes */
 }
 
 /* Footer */
