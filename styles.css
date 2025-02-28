@@ -33,6 +33,7 @@ header .summary {
 
 /* Main Container */
 .container {
+    display: flex;
     background-color: #fff;
     padding: 25px;
     border-radius: 12px;
@@ -128,7 +129,6 @@ input[type="text"] {
 footer {
     text-align: center;
     margin-top: auto;
-    padding: 20px;
     background-color: #333;
     color: #fff;
     width: 100%;
